@@ -1,1 +1,11 @@
-<p>form-moments works!</p>
+<div class="container">
+  <form [formGroup]="formulario">
+    <label for="name" class="form-label">Nome</label>
+    <input type="password" formControlName="name" id="name">
+
+    <label for="email" class="form-label">Email</label>
+    <input type="email" formControlName="email" id="email">
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
